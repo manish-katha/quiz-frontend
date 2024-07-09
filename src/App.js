@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home } from "./pages/home"; // not done
+import { Home } from "./pages/home"; 
 import { Login } from "./pages/login";
 import { Register } from "./pages/register";
 import { CreateQuiz } from "./pages/createQuiz";
