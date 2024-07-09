@@ -1,0 +1,29 @@
+/* Home.css */
+
+.Home {
+    padding: 20px;
+}
+
+.box-container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around; /* Center boxes horizontally with space between */
+    flex-wrap: wrap; /* Allows boxes to wrap onto new lines on smaller screens */
+}
+
+.box {
+    width: 45%; /* Each box takes up 45% of the container width */
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+@media (max-width: 768px) {
+    .box {
+        width: 100%; /* Full width on screens smaller than 768px */
+    }
+}

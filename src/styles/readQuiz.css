@@ -1,0 +1,61 @@
+styles/readQuiz.css
+
+.read {
+  
+  margin: auto;
+  padding: 20px;
+}
+
+.read .quiz-container {
+  background-color: #ffffff; /* Default background color */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  width: 80vh;
+  margin: auto;
+  margin-top: 35px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.read .quiz-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0; /* Darker background color on hover */
+}
+
+.read .quiz-link {
+  background: none;
+  border: none;
+  border-radius: 20px;
+  height: 45px;
+  width: 45%;
+  cursor: pointer;
+  font-size: 18px;
+  color:  #FBEAEB;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  background-color: #2F3C7E;
+}
+
+.read .quiz-link:hover {
+  text-decoration: underline;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: red;
+  margin-left: 10px;
+  transition: color 0.2s ease-in-out;
+}
+
+.read .delete-button:hover {
+  color: darkred;
+}

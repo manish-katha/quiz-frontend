@@ -1,0 +1,62 @@
+/* footer.css */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    position: fixed;
+    bottom: 0;
+    width: 97%;
+   
+}
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-around; /* Center items with space between */
+    flex-wrap: wrap; /* Allow items to wrap onto new lines */
+}
+
+.footer .col-md-6 {
+    width: 45%; /* Adjusted width to fit two columns properly */
+    padding: 0 15px; /* Added padding for spacing between columns */
+}
+
+.footer h5 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px; /* Increased margin for better separation */
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 50px 0;
+        position: relative;
+        bottom: 0;
+        width: 97%; /* Full width on screens smaller than 768px */
+    }
+}

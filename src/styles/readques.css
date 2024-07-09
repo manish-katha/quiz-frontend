@@ -1,0 +1,74 @@
+/* Navbar Component */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  /* Main Container */
+  .read-ques {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Question Container */
+  .ques-index {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ques-index h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .ques-index p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Options */
+  .option {
+    margin-bottom: 0.5rem;
+  }
+  
+  .option label {
+    margin-left: 0.5rem;
+  }
+  
+  /* Submit Button */
+  .submitanswer {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitanswer:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Results */
+  .results {
+    margin-top: 2rem;
+  }
+  
+  .results h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .results p {
+    font-size: 1.2rem;
+  }
+  
