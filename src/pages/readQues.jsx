@@ -31,6 +31,7 @@ export const ReadQues = () => {
       setQues(response.data.ques[0]);
 
       // Assuming response.data.ques is an array
+      
     } catch (error) {
       console.error("Error fetching tasks:", error);
       // Handle error (show error message, retry mechanism, etc.)

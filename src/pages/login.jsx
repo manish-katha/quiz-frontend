@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { server } from "..";
+import { Context, server } from "..";
 import axios from "axios";
 import "../styles/login.css";
 import Footer from "./footer";
@@ -8,6 +8,7 @@ import Footer from "./footer";
 export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const { isAuthenticated, setIsAuthenticated } = useContext(Context);
 
   const navigate = useNavigate();
 
@@ -32,10 +33,12 @@ export const Login = () => {
 
       console.log("success 2");
       alert("Login successfully");
+      setIsAuthenticated(true);
       navigate("/");
     } catch (error) {
       console.log(error);
       alert("Login fail");
+      setIsAuthenticated(false);
       navigate("/register");
     }
   };
@@ -43,7 +46,7 @@ export const Login = () => {
   return (
     <>
       <div className="Login">
-      <Link to="/">Home</Link>
+        <Link to="/">Home</Link>
         <form onSubmit={handleSubmit}>
           <section>
             <input

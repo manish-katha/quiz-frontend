@@ -1,9 +1,29 @@
 // Navbar.js
 
-import React from "react";
+import React, { useContext } from "react";
 import "../styles/navbar.css";
+import { Context, server } from "..";
+import axios from "axios";
 
 const Navbar = () => {
+  const { isAuthenticated, setIsAuthenticated } = useContext(Context);
+
+  const logoutHandler = async () => {
+    console.log("Logout button clicked"); // Log for checking button click
+
+    try {
+      const response = await axios.get(`${server}/users/logout`, {
+        withCredentials: true,
+      });
+
+      console.log("Logout response:", response); // Log the response from the server
+      setIsAuthenticated(false);
+      console.log("User logged out, state updated to:", isAuthenticated);
+    } catch (error) {
+      console.error("Logout failed", error);
+    }
+  };
+
   return (
     <nav className="navbar">
       {/* <div className="logo">
@@ -22,7 +42,13 @@ const Navbar = () => {
       </ul>
       <ul className="login-links">
         <li>
-          <a href="/login">Login</a>
+          {isAuthenticated ? (
+            <button onClick={logoutHandler} className="btn">
+              Logout
+            </button>
+          ) : (
+            <a href="/login">Login</a>
+          )}
         </li>
       </ul>
     </nav>
