@@ -21,7 +21,7 @@ export const Login = () => {
         `${server}/users/login`,
         {
           email,
-          password,
+          password, 
         },
         {
           headers: {
